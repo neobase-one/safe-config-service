@@ -22,7 +22,7 @@ services:
     volumes:
       - ./data/db:/var/lib/postgresql/data
     ports:
-      - "${POSTGRES_PORT}:5432"
+      - "${POSTGRES_PORT}:5433"
   web:
     build: .
     tty: true

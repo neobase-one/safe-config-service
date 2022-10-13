@@ -1,0 +1,68 @@
+{
+  "chainId": "9000",
+  "chainName": "Canto Test Net",
+  "shortName": "Canto test",
+  "description": "L1 chain (Canto Test)",
+  "l2": false,
+  "rpcUri": {
+    "authentication": "NO_AUTHENTICATION",
+    "value": "http://35.154.223.157:8545"
+  },
+  "safeAppsRpcUri": {
+    "authentication": "NO_AUTHENTICATION",
+    "value": "http://35.154.223.157:8545"
+  },
+  "publicRpcUri": {
+    "authentication": "NO_AUTHENTICATION",
+    "value": "http://35.154.223.157:8545"
+  },
+  // NOT DONE
+  "blockExplorerUriTemplate": {
+    "address": "https://polygonscan.com/address/{{address}}",
+    "txHash": "https://polygonscan.com/tx/{{txHash}}",
+    "api": "https://api.polygonscan.com/api?module={{module}}&action={{action}}&address={{address}}&apiKey={{apiKey}}"
+  },
+  "nativeCurrency": {
+    "name": "TEVMOS",
+    "symbol": "TEVMOS",
+    "decimals": 18,
+    "logoUri": "TO_BE_DEPLOYED"
+  },
+  "transactionService": "TO_BE_DEPLOYED",
+  "vpcTransactionService": "TO_BE_DEPLOYED",
+  "theme": { "textColor": "#ffffff", "backgroundColor": "#8248E5" },
+// TO BE ADDED
+  "gasPrice": [
+    {
+      "type": "oracle",
+      "uri": "https://gasstation-mainnet.matic.network/",
+      "gasParameter": "standard",
+      "gweiFactor": "1000000000.000000000"
+    }
+  ],
+  "ensRegistryAddress": null,
+  "recommendedMasterCopyVersion": "1.3.0",
+  "disabledWallets": [
+    "authereum",
+    "fortmatic",
+    "keystone",
+    "lattice",
+    "ledger",
+    "opera",
+    "operaTouch",
+    "portis",
+    "torus",
+    "trezor",
+    "trust",
+    "walletLink"
+  ],
+  "features": [
+    "CONTRACT_INTERACTION",
+    "ERC721",
+    "SAFE_APPS",
+    "SAFE_TX_GAS_OPTIONAL",
+    "SPENDING_LIMIT",
+    "TX_SIMULATION",
+    "WARNING_BANNER"
+  ]
+}
