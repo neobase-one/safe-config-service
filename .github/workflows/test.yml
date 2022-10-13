@@ -73,11 +73,11 @@ jobs:
           --health-timeout 5s
           --health-retries 5
         ports:
-          - 5433:5433
+          - 5432:5432
     env:
       SECRET_KEY: 'insecure_key_for_dev'
       POSTGRES_HOST: localhost
-      POSTGRES_PORT: 5433
+      POSTGRES_PORT: 5432
       AWS_ACCESS_KEY_ID: 'example-aws-access-key-id'
       AWS_SECRET_ACCESS_KEY: 'example-aws-secret-access-key'
       AWS_STORAGE_BUCKET_NAME: 'example-aws-storage-bucket-name'
