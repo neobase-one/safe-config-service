@@ -1,4 +1,4 @@
-version: "3.9"
+version: "3.3"
 
 volumes:
   nginx-shared:
@@ -20,9 +20,9 @@ services:
     env_file:
       - .env
     volumes:
-      - ./data/db:/var/lib/postgresql/data
+      - ./data/db:/var/lib/postgresql/data1
     ports:
-      - "${POSTGRES_PORT}:5432"
+      - "5433:5432"
   web:
     build: .
     tty: true
